@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Tilt-Neon;
+    src: url(./fonts/TiltNeon-Regular-VariableFont.ttf);
+}
+
+*{
+    font-family: Tilt-Neon;
+    
+}
+
+body{
+    background: #000;
+    
+}
+
+.main{
+    font-family: "TiltNeon";
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.022);
+    margin: auto;
+    border: 3px solid rgba(30, 29, 29, 0.085);
+    
+}
+.menu {
+    justify-content: space-between;
+    --b: 3px;   
+    --s: .45em; 
+    --color: #ffffff;
+    
+  
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.menu:hover,
+.menu:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color1);
+    outline-offset: .05em;
+}
+  
+.menu:active {
+    background: rgba(0, 0, 0, 0.479);
+    color: #ffffff;
+}
+
+.Texto{
+    align-content: center;
+    align-items: center;
+    color: #1515150f;
+    transition: 10s linear;
+    width: auto;
+    padding: auto;
+}
+.Texto:hover, .Texto:focus-visible, .Texto::-webkit-scrollbar
+{
+    color: antiquewhite;
+    transition: 0.5s linear;
+    background: #3c3c3c19;
+    
+}
+
+
+.Titulo{
+    align-content: center;
+    align-items: center;
+    color: #eaeaea00;
+    transition: 7s linear;
+    width: auto;
+    
+}
+.Titulo:hover, .Titulo:focus-visible, .Titulo::-webkit-scrollbar{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 1s linear;
+}
+.Titulo:hover{
+    text-decoration: underline;
+}
+.Precentacion, .Presentacion-T{
+    text-align: center;
+    color: antiquewhite;
+    border: 1px solid white;
+ 
+    background: #ffffff03;
+    margin: auto;
+    padding: auto;
+} 
+.Presentacion-T{
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    height: 100px;
+    width: 500px;
+}
+
+.header{
+    color:#000;
+    display: flex;
+    height: 70px;
+    width: auto;
+    
+}
+.header, .nav-link{
+    display: inline-block;
+    padding: 0 2px;
+    
+}
+
+.nav-link{
+    position: fixed;
+    background: #000;
+    border: whitesmoke solid 2px;
+    border-radius: 10px;
+    align-items: center;
+    float: left;
+    
+
+}
+.Poster-P{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 600px;
+    width: auto;
+}
+.Proyecto-Preccentacion{
+    display: flex;
+    padding: 10%;
+    flex-wrap: wrap;
+    gap: 15%;
+    border: solid 2px #ffffff;
+    align-content: center;
+    align-items: center;
+}
